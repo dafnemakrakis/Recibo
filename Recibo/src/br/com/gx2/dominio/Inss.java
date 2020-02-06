@@ -2,6 +2,7 @@ package br.com.gx2.dominio;
 
 public class Inss {
 	
+	private double servico;
 	private double valorInss;
 	
 	
@@ -10,9 +11,20 @@ public class Inss {
 	}
 
 
-	public Inss(double valorInss) {
+	public Inss(double servico, double valorInss) {
 		super();
+		this.servico = servico;
 		this.valorInss = valorInss;
+	}
+
+
+	public double getServico() {
+		return servico;
+	}
+
+
+	public void setServico(double servico) {
+		this.servico = servico;
 	}
 
 
@@ -28,9 +40,10 @@ public class Inss {
 
 	@Override
 	public String toString() {
-		return "Inss [valorInss=" + valorInss + "]";
+		return "Inss [servico=" + servico + ", valorInss=" + valorInss + "]";
 	}
-	
+
 	
 
+	
 }
