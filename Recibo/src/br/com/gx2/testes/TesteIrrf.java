@@ -6,7 +6,7 @@ public class TesteIrrf {
 	
 	public static void main(String[] args) {
 		
-		double servico = 2500.0;
+		double servico = 3000.0;
 		
 		CalculoIrrf irrf = new CalculoIrrf();
 		
